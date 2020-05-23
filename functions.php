@@ -3,21 +3,21 @@
 // Custom functions
 
 function bn_title() {
-    bloginfo('title');
-    echo " - ";
-    if (is_front_page()) {
-      bloginfo('description');
-    }
-    elseif (is_home()) {
-      echo "Blog";
-    }
-    elseif (is_tag()) {
-      single_tag_title();
-      echo " posts";
-    }
-    else {
-      the_title();
-    }
+  bloginfo('title');
+  echo " - ";
+  if (is_front_page()) {
+    bloginfo('description');
+  }
+  elseif (is_home()) {
+    echo "Blog";
+  }
+  elseif (is_tag()) {
+    single_tag_title();
+    echo " posts";
+  }
+  else {
+    the_title();
+  }
 }
 
 function timestamped_stylesheet($stylesheet='style.css') {
