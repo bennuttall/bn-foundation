@@ -23,7 +23,11 @@ html {
 
 header {
   margin-bottom: 2em;
-  background: #444;
+  background: #05386b;
+}
+
+header div.top-bar, header div.top-bar ul {
+  background: #05386b;
 }
 
 header .logo {
@@ -38,6 +42,11 @@ header h1 {
   color: white;
   display: inline;
   font-variant: small-caps;
+}
+
+.button {
+  background-color: transparent;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,9 +64,6 @@ h1, h1 a:link, h1 a:visited, h2 a:link, h2 a:visited {
   color: #77777a;
   text-decoration: none;
 }
-
-header div.top-bar, header div.top-bar ul { background: #444; }
-header .menu-text a { padding: 0; }
 
 .menu .button {
   font-family: "Roboto Mono", monospace;
@@ -81,8 +87,8 @@ footer {
   bottom: 0;
   left: 0;
   height: 50px;
-  background: #99999b;
-  border-top: 2px solid #77777a;
+  background: #05386b;
+  color: white;
   line-height: 48px;
   font-family: "Roboto Condensed", Arial, sans-serif;
   text-align: center;
@@ -98,11 +104,17 @@ code {
 }
 
 pre {
-  background: #ffdead;
-  border: 2px solid #ffbd5c;
+  background: #edf5e1;
+  border: 2px solid #05386b;
   border-radius: 5px;
   margin: 1em 2em;
   padding: 1em;
+}
+
+.callout.primary {
+  background-color: #7395ae;
+  color: #0a0a0a;
+  border-radius: 5px;
 }
 
 ul li {
