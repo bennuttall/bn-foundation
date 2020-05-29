@@ -151,8 +151,8 @@ ul.talks li .slide {
 
 img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img,
 .widget-area img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 img.alignright {float:right; margin:0 0 1em 1em}
@@ -162,15 +162,15 @@ a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
-p.wp-caption-text {
+p.wp-caption-text, figure figcaption, figure.wp-block-image figcaption {
   margin: 0;
   padding: 5px 0;
   background: #edf5e1;
   border: 2px solid #05386b;
-	text-align: center;
+  text-align: center;
   font-size: 14px;
 }
 
-.wp-caption img {
-	margin: 0;
+.wp-caption img, figure.wp-block-image img, .wp-block-image figcaption {
+	margin: 0 !important;
 }
