@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <div class="row">
-  <h1>Blog</h1>
+  <div class="small-12 medium-8 columns">
+    <h1>Blog</h1>
+  </div>
   <?php if (have_posts()): ?>
     <?php while (have_posts()): the_post(); ?>
       <div class="small-12 medium-8 columns">
