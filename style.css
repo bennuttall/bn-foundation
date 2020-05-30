@@ -174,3 +174,7 @@ p.wp-caption-text, figure figcaption, figure.wp-block-image figcaption {
 .wp-caption img, figure.wp-block-image img, .wp-block-image figcaption {
 	margin: 0 !important;
 }
+
+.wp-block-embed {
+  text-align: center;
+}
