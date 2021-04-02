@@ -120,7 +120,12 @@ pre {
 
 .callout.primary {
   background-color: #4398d3;
-  color: #0a0a0a;
+  color: white;
+  border: 1px solid black;
+}
+
+.callout.primary a {
+  color: white;
 }
 
 ul li {
@@ -135,18 +140,8 @@ ul li {
   text-align: right;
 }
 
-ul.talks li {
-  height: 180px;
-  clear: left;
-  list-style-type: none;
-}
-
-ul.talks li .slide {
-  width: 300px;
-  margin-right: 10px;
-  float: left;
-  border: 1px solid black;
-  text-align: center;
+table.talks th {
+  text-align: left;
 }
 
 .columns:last-child:not(:first-child) {
@@ -171,12 +166,12 @@ a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 p.wp-caption-text, figure figcaption, figure.wp-block-image figcaption {
-  margin: 0;
-  padding: 5px 0;
-  background: #edf5e1;
-  border: 2px solid #4398d3;
+  padding: 5px 2px;
+  background: #4398d3;
   text-align: center;
   font-size: 14px;
+  border: 1px solid black;
+  border-top: 0;
 }
 
 .wp-caption img, figure.wp-block-image img, .wp-block-image figcaption {
