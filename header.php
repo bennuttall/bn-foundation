@@ -28,7 +28,7 @@
               <li class="menu-text">
                 <a href="/">
                   <div class="logo"></div>
-                  <h1><?php bloginfo('title'); ?></h1>
+                  <header><?php bloginfo('title'); ?></header>
                 </a>
               </li>
             </ul>

@@ -23,11 +23,11 @@ html {
 
 header {
   margin-bottom: 2em;
-  background: #05386b;
+  background: #4398d3;
 }
 
 header div.top-bar, header div.top-bar ul {
-  background: #05386b;
+  background: #4398d3;
 }
 
 header .logo {
@@ -38,7 +38,9 @@ header .logo {
   vertical-align: middle;
 }
 
-header h1 {
+header header {
+  font-family: "Roboto Condensed";
+  font-size: 40px;
   color: white;
   display: inline;
   font-variant: small-caps;
@@ -50,18 +52,20 @@ header h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Roboto Condensed", serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: black;
 }
 
 h2 {
-  color: #77777a;
   overflow-wrap: anywhere;
 }
 
 a { color: #222; text-decoration: underline; }
 
 h1, h1 a:link, h1 a:visited, h2 a:link, h2 a:visited {
-  color: #77777a;
+  color: black;
   text-decoration: none;
 }
 
@@ -87,11 +91,15 @@ footer {
   bottom: 0;
   left: 0;
   height: 50px;
-  background: #05386b;
+  background: #4398d3;
   color: white;
   line-height: 48px;
   font-family: "Roboto Condensed", Arial, sans-serif;
   text-align: center;
+}
+
+footer a {
+  color: white;
 }
 
 pre, code {
@@ -105,13 +113,13 @@ code {
 
 pre {
   background: #edf5e1;
-  border: 2px solid #05386b;
+  border: 2px solid #4398d3;
   margin: 1em 2em;
   padding: 1em;
 }
 
 .callout.primary {
-  background-color: #7395ae;
+  background-color: #4398d3;
   color: #0a0a0a;
 }
 
@@ -166,7 +174,7 @@ p.wp-caption-text, figure figcaption, figure.wp-block-image figcaption {
   margin: 0;
   padding: 5px 0;
   background: #edf5e1;
-  border: 2px solid #05386b;
+  border: 2px solid #4398d3;
   text-align: center;
   font-size: 14px;
 }
