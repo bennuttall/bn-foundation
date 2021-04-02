@@ -12,32 +12,37 @@ $posts = get_pages($args);
     <h1><?php the_title(); ?></h1>
     <?php the_content(); ?>
     <h2>Past</h2>
-    <ul class="talks">
+  </div>
+</div>
       <?php foreach ($posts as $post): setup_postdata($post); ?>
-        <h3><?php the_title(); ?></h3>
-        <?php $talks = array_reverse(get_field('talks'));
+        <?php $talks = array_reverse(get_field('talks')); ?>
+        <div class="row">
+          <div class="small-12 columns">
+            <h3><?php the_title(); ?> (<?php echo count($talks); ?>)</h3>
+            <table class="talks">
+              <tr>
+                <th>Talk title</th>
+                <th>Event</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Slides</th>
+                <th>Video</th>
+              </tr>
 
-        foreach ($talks as $talk): ?>
-          <li>
-            <h4><?php echo $talk['title']; ?></h4>
-            <?php echo $talk['event']; ?><br />
-            <?php echo $talk['location']; ?><br />
-            <?php echo $talk['date']; ?><br />
+            <?php foreach ($talks as $talk): ?>
+              <tr>
+                <td><?php echo $talk['title']; ?></td>
+                <td><?php echo $talk['event']; ?></td>
+                <td><?php echo $talk['location']; ?></td>
+                <td><?php echo $talk['date']; ?></td>
+                <td><?php if ($talk['slides_url']): echo "<a href='{$talk['slides_url']}'>slides</a>"; endif; ?>
+                <td><?php if ($talk['video_url']): echo "<a href='{$talk['video_url']}'>video</a>"; endif; ?>
+              </tr>
+            </div>
+          </div>
 
-            <?php $slides = $talk['slides_url'] ? "<a href='{$talk['slides_url']}'>slides</a>" : null;
-            $video = $talk['video_url'] ? "<a href='{$talk['video_url']}'>video</a>" : null;
-
-            if ($slides && $video):
-              echo "{$slides} | {$video}";
-            elseif ($slides):
-              echo $slides;
-            elseif ($video):
-              echo $video;
-            endif; ?>
-          </li>
-
-        <?php endforeach;
-      endforeach; ?>
-    </ul>
+        <?php endforeach; ?>
+        </table>
+      <?php endforeach; ?>
   </div>
 </div>
