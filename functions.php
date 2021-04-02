@@ -1,5 +1,7 @@
 <?php
 
+define("TOOLING", true);
+
 // Custom functions
 
 function bn_title() {
