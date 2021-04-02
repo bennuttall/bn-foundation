@@ -33,8 +33,7 @@
               </li>
             </ul>
           </div>
-          <?php $nav = defined('TOOLING') ? 'nav-tooling' : 'nav'; ?>
-		      <?php get_template_part($nav); ?>
+		      <?php get_template_part('nav'); ?>
         </div>
       </div>
     </header>
