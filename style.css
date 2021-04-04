@@ -90,12 +90,15 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 50px;
   background: #4398d3;
   color: white;
-  line-height: 48px;
   font-family: "Roboto Condensed", Arial, sans-serif;
   text-align: center;
+}
+
+footer .row {
+  padding: 0 2px;
+  line-height: 40px;
 }
 
 footer a {
