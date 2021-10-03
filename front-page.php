@@ -22,12 +22,9 @@
   while ($latest->have_posts()): $latest->the_post(); ?>
 
     <div class="small-12 medium-8 columns">
-      <date><?php echo get_the_date(); ?></date>
+      <time datetime="<?php echo get_the_date(DateTime::ISO8601); ?>" title="<?php echo get_the_date(DateTime::ISO8601); ?>"><?php echo get_the_date(); ?></time>
       <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <?php the_excerpt(); ?>
-      <div class="callout primary">
-        <?php show_tag_list(get_the_ID(), ', ', 'Tags: '); ?>
-      </div>
     </div>
 
   <?php endwhile; wp_reset_postdata(); ?>
@@ -39,7 +36,9 @@
 <div class="row">
   <div class="small-12 medium-8 columns">
     <h2>More of my content from elsewhere</h2>
+  </div>
 
+  <div class="small-12 medium-8 columns">
     <?php $other_posts = get_field('elsewhere_posts'); ?>
 
     <ul>
