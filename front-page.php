@@ -35,16 +35,16 @@
 
 <div class="row">
   <div class="small-12 medium-8 columns">
-    <h2>More of my content from elsewhere</h2>
+    <h2>More of my content elsewhere</h2>
   </div>
 
   <div class="small-12 medium-8 columns">
-    <?php $other_posts = get_field('elsewhere_posts'); ?>
-
     <ul>
-    <?php foreach ($other_posts as $post): ?>
-      <li><strong><a href="<?php echo $post['url']; ?>"><?php echo $post['title']; ?></a></strong> [<?php echo $post['site']; ?></a>]</li>
-    <?php endforeach; ?>
+      <li><a href="https://tooling.bennuttall.com/">My tooling blog</a></li>
+      <li><a href="https://bbcnewslabs.co.uk/team/labs/bennuttall/">My projects at BBC News Labs</a></li>
+      <li><a href="https://www.raspberrypi.com/news/author/bennuttall/">My blog posts for Raspberry Pi Trading</a></li>
+      <li><a href="https://www.raspberrypi.org/blog/author/bennuttall/">My blog posts for Raspberry Pi Foundation</a></li>
+      <li><a href="https://opensource.com/user_articles/26767/26767">My articles for opensource.com</a></li>
     </ul>
   </div>
 </div>
